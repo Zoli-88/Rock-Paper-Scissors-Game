@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1 class="title">Welcome to RPS Human vs Computer edition!</h1>
+    </header>
+    <main>
+
+        <!-- Main Paragraph -->
+
+        <p class="paragraph-text">The rules of the game are pretty simple. You can choose either Rock, Paper or Scissors
+            by
+            clicking on one of the images below.<br>The computer will choose at random. <br>Rock beats Scissors, Paper
+            beats Rock and
+            Scissors beats Paper. If both players choose the same option, we have a draw.</p>
+
+        <!-- First container for the three main images (Rock, Paper, Scissors) along with their titles written in three separate paragraphs -->
+
+        <div class="container">
+            <div class="images"><img src="rock.png" alt="" width="200px" id="large-rock">
+                <p class="image-text">ROCK</p>
+            </div>
+            <div class="images"><img src="paper.png" alt="" width="200px" id="large-paper">
+                <p class="image-text">PAPER</p>
+            </div>
+            <div class="images"><img src="scissors.png" alt="" width="200px" id="large-scissors">
+                <p class="image-text">SCISSORS</p>
+            </div>
+
+        </div>
+
+        <!-- Second container for 4 icons (2 Question Mark icons, 1 Human icon, 1 Computer icon) and 5 paragraphs (4 titles for the icons, 1 separate paragraph)
+Arrangement: Left: 1 Question Mark icon, 1 Human icon / Middle: 1 paragraph / Right: 1 Computer icon, 1 Question Mark icon -->
+
+        <div class="icon-container">
+
+            <div class="icons"><img id="player-question-mark" src="question-mark.png" alt="" width="100px">
+                <p class="image-text">Player's<br>choice</p>
+            </div>
+            <div class="icons">
+                <img src="human.png" alt="" width="100px" id="human">
+                <p class="image-text" id="player-wins-counter">Wins:<br>0</p>
+            </div>
+            <p class="draw-counter-text" id="draw-counter">Draw: 0</p>
+            <div class="icons" id="computer-bg">
+                <img src="computer.png" alt="" width="100px" id="computer">
+                <p class="image-text" id="computer-wins-counter">Wins:<br>0</p>
+            </div>
+            <div class="icons"><img id="comp-question-mark" src="question-mark.png" alt="" width="100px">
+                <p class="image-text">Comp's<br>choice</p>
+            </div>
+        </div>
+    </main>
+    <!-- Footer with one paragraph which contains a button to reset the score -->
+    <footer>
+        <p class="button-text">Click <button class="btn" id="reset-button">here</button> to reset the score.</p>
+    </footer>
+
+</body>
+
+</html>
